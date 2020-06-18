@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 20px;
+  background-color: rgb(229, 233, 227);
+}
+
+#global {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  display: inline;
+  background-color: cadetblue;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: black 3px 3px 5px;
+  flex-direction: row;
+  display: flex;
+}
+.nav-header img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.nav-title {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
+.nav-title h1 {
+  font-size: 25px;
+  margin: 0px;
+}
+.nav-title p {
+  font-size: smaller;
+  margin: 0px;
+}
+
+#affichage {
+  display: flex;
+  flex-direction: row;
+}
+#affichage1 {
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  flex-grow: 1;
+  margin-right: 5px;
+  height: 240px;
+  box-shadow: black 3px 3px 5px;
+}
+
+#formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+#bouton {
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+#input {
+  padding: 5px;
+  text-align: center;
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+#affichage2 {
+  background-color: cadetblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  height: 240px;
+  box-shadow: black 3px 3px 5px;
+}
+
+#listeContacts {
+  display: flex;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#titreAffichage2 {
+  padding: 5px;
+  text-align: center;
+}
+
+select {
+  flex-grow: 1;
+  border-radius: 5px;
+  height: 204px;
+}
+option {
+  font-size: 16px;
+}
+option:hover {
+  color: blue;
+}
+
+#affichage3 {
+  background-color: cadetblue;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 5px;
+  height: 240px;
+  box-shadow: black 3px 3px 5px;
+}
+
+.titre {
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#texte3 {
+  margin: 0 5px 6px 5px;
+  padding-left: 5px;
+  font-size: 16px;
+  flex-grow: 1;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  #affichage {
+    flex-direction: column;
+  }
+  #affichage1 {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  #affichage2 {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  #affichage3 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.newContact {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  flex-grow: 2;
+}
+
+/***
+* Responsive Caroussel - https://la-cascade.io/un-carrousel-responsif-en-pur-css/
+***/
+div#slider {
+  width: 80%;
+  max-width: 1000px;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+}
+div#slider figure img {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+div#slider {
+  width: 50px;
+  max-width: 1000px;
+  overflow: hidden;
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 20s slidy infinite;
+}
+
+/*************/
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
